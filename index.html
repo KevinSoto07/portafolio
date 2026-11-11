@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kevin Granillo – Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#inicio" class="logo">KevinDev</a>
+    <ul>
+      <li><a class="link" href="#sobre-mi">Sobre mí</a></li>
+      <li><a class="link" href="#habilidades">Habilidades</a></li>
+      <li><a class="link" href="#proyectos">Proyectos</a></li>
+      <li><a class="link" href="#experiencia">Experiencia</a></li>
+      <li><a class="link" href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="progress" id="progress"></div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <header class="hero" id="inicio">
+    <div class="wrap">
+      <h1><span><i>Hola, soy</i></span><span><i>Kevin Granillo.</i></span></h1>
+      <p class="role fade">Desarrollador <b id="typed"></b><span class="caret"></span></p>
+      <div class="btns fade d2">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="cv.pdf" download>Descargar CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi">
+    <div class="wrap about">
+      <div class="rv">
+        <h2>Sobre mí</h2>
+        <p>Mi nombre es Kevin Granillo, estudiante de segundo año de Ing. en Desarrollo de Software.</p>
+        <p>Me interesa realizar prácticas o proyectos freelance para poder fortalecer mis habilidades y adquirir más conocimiento</p>
+      </div>
+      <dl class="facts rv">
+        <div><dt>Ubicación</dt><dd>San Miguel, El Salvador</dd></div>
+        <div><dt>Estudios</dt><dd>Ing. en Desarrollo de Software, Universidad de Oriente</dd></div>
+        <div><dt>Idiomas</dt><dd>Español, Inglés</dd></div>
+        <div><dt>Disponibilidad</dt><dd>Abierto a oportunidades</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades">
+    <div class="wrap rv">
+      <h2>Habilidades</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" data-tab="front">Frontend</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="back">Backend</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="tools">Herramientas</button>
+      </div>
+      <div class="panel on" id="front">
+        <div class="skill" style="--lvl:90%"><div class="row"><span>HTML y CSS</span><span>Avanzado</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:80%"><div class="row"><span>TypeScript</span><span>Avanzado</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:75%"><div class="row"><span>React</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:65%"><div class="row"><span>Figma</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+      </div>
+      <div class="panel" id="back">
+        <div class="skill" style="--lvl:80%"><div class="row"><span>Node.js y Express</span><span>Avanzado</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:75%"><div class="row"><span>MySQL</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:70%"><div class="row"><span>APIs REST</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:55%"><div class="row"><span>Python</span><span>Básico</span></div><div class="track"><i></i></div></div>
+      </div>
+      <div class="panel" id="tools">
+        <div class="skill" style="--lvl:85%"><div class="row"><span>Git y GitHub</span><span>Avanzado</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:70%"><div class="row"><span>Docker</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:65%"><div class="row"><span>Linux</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+        <div class="skill" style="--lvl:60%"><div class="row"><span>Redes</span><span>Intermedio</span></div><div class="track"><i></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="wrap rv">
+      <h2>Proyectos</h2>
+      <div class="chips">
+        <button class="chip" aria-pressed="true" data-f="all">Todos</button>
+        <button class="chip" aria-pressed="false" data-f="web">Web</button>
+        <button class="chip" aria-pressed="false" data-f="api">Backend</button>
+        <button class="chip" aria-pressed="false" data-f="ia">IA</button>
+      </div>
+      <div class="grid">
+        <article class="card" data-c="web">
+          <h3>Proyecto uno</h3>
+          <p>Describe qué problema resuelve, para quién y cuál fue tu papel.</p>
+          <div class="tags"><span>React</span><span>TypeScript</span></div>
+          <a class="more" href="#">Ver código</a>
+        </article>
+        <article class="card" data-c="api">
+          <h3>Proyecto dos</h3>
+          <p>Un resultado concreto: usuarios, rendimiento o tiempo ahorrado.</p>
+          <div class="tags"><span>Node.js</span><span>MySQL</span></div>
+          <a class="more" href="#">Ver código</a>
+        </article>
+        <article class="card" data-c="ia">
+          <h3>Proyecto tres</h3>
+          <p>Explica la idea en una o dos frases y qué aprendiste al hacerlo.</p>
+          <div class="tags"><span>Python</span><span>YOLO</span></div>
+          <a class="more" href="#">Ver código</a>
+        </article>
+        <article class="card" data-c="web api">
+          <h3>Proyecto cuatro</h3>
+          <p>Aplicación completa con frontend, API y base de datos.</p>
+          <div class="tags"><span>Express</span><span>React</span></div>
+          <a class="more" href="#">Ver demo</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia">
+    <div class="wrap rv">
+      <h2>Experiencia y educación</h2>
+      <div class="timeline">
+        <details open>
+          <summary><span>Puesto o proyecto actual<small>Empresa · 2025 – Actualidad</small></span></summary>
+          <ul>
+            <li>Logro medible con número o resultado.</li>
+            <li>Tecnologías usadas y responsabilidad principal.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Puesto anterior<small>Empresa · 2024 – 2025</small></span></summary>
+          <ul>
+            <li>Qué construiste y qué impacto tuvo.</li>
+            <li>Trabajo en equipo, metodologías o herramientas.</li>
+          </ul>
+        </details>
+        <details>
+          <summary><span>Ingeniería de Software<small>Tu universidad · 2023 – Actualidad</small></span></summary>
+          <ul>
+            <li>Materias o certificaciones relevantes.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="wrap rv">
+      <div class="contact">
+        <h2>Trabajemos juntos</h2>
+        <p class="muted">Escríbeme si tienes una oferta, un proyecto o una idea. Respondo en menos de 48 horas.</p>
+        <div class="btns" style="justify-content:center">
+          <a class="btn primary" href="mailto:kevingranillo28@gmail.com">Enviar correo</a>
+          <button class="btn" id="copy" data-mail="kevingranillo28@gmail.com">Copiar correo</button>
+        </div>
+        <div class="social">
+          <a href="https://github.com/KevinSoto07">GitHub</a><a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Kevin Granillo</footer>
+<div class="toast" id="toast" role="status">Correo copiado</div>
+
+<script>
+/* Texto animado del hero: edita las frases */
+const words=["full-stack","web","de software"];
+const typed=document.getElementById("typed");
+let w=0,c=0,del=false;
+(function tick(){
+  const word=words[w];
+  typed.textContent=word.slice(0,c);
+  if(!del&&c===word.length){del=true;return setTimeout(tick,1600)}
+  if(del&&c===0){del=false;w=(w+1)%words.length}
+  c+=del?-1:1;
+  setTimeout(tick,del?45:90);
+})();
+
+/* Luz que sigue al cursor en el hero */
+const hero=document.querySelector(".hero");
+hero.addEventListener("pointermove",e=>{
+  const r=hero.getBoundingClientRect();
+  hero.style.setProperty("--mx",(e.clientX-r.left)+"px");
+  hero.style.setProperty("--my",(e.clientY-r.top)+"px");
+});
+
+/* Barra de progreso de scroll */
+const bar=document.getElementById("progress");
+addEventListener("scroll",()=>{
+  const h=document.documentElement;
+  bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+"%";
+},{passive:true});
+
+/* Reveal y enlace activo del menú */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll("nav a.link")];
+const spy=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting)links.forEach(l=>l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id));
+}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section").forEach(s=>spy.observe(s));
+
+/* Pestañas de habilidades */
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===t));
+  document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("on",p.id===t.dataset.tab));
+}));
+
+/* Filtro de proyectos */
+document.querySelectorAll(".chip").forEach(ch=>ch.addEventListener("click",()=>{
+  document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===ch));
+  document.querySelectorAll(".card").forEach(card=>{
+    card.classList.toggle("hide",ch.dataset.f!=="all"&&!card.dataset.c.split(" ").includes(ch.dataset.f));
+  });
+}));
+
+/* Inclinación 3D suave en tarjetas */
+document.querySelectorAll(".card").forEach(card=>{
+  card.addEventListener("pointermove",e=>{
+    const r=card.getBoundingClientRect();
+    const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform=`perspective(700px) rotateY(${x*6}deg) rotateX(${-y*6}deg) translateY(-4px)`;
+  });
+  card.addEventListener("pointerleave",()=>card.style.transform="");
+});
+
+/* Copiar correo */
+const toast=document.getElementById("toast");
+document.getElementById("copy").addEventListener("click",e=>{
+  navigator.clipboard?.writeText(e.currentTarget.dataset.mail);
+  toast.classList.add("show");setTimeout(()=>toast.classList.remove("show"),1800);
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
