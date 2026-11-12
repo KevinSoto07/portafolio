@@ -34,6 +34,11 @@ nav a.link.on{color:var(--text);background:var(--surface-2)}
 .hero h1{font:800 clamp(2.8rem,9vw,6rem)/1 var(--display);letter-spacing:-.04em;margin-bottom:1.25rem}
 .hero h1 span{display:block;overflow:hidden}
 .hero h1 span i{display:block;font-style:normal;transform:translateY(105%);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero-grid{display:flex;align-items:center;gap:3rem}
+.hero-text{min-width:0}
+.photo{order:2;flex:none;width:clamp(160px,22vw,280px);aspect-ratio:1;border-radius:50%;padding:6px;background:linear-gradient(135deg,var(--accent),var(--warm))}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;background:var(--surface)}
+
 .hero h1 span:nth-child(2) i{animation-delay:.12s;color:var(--accent)}
 .role{font-size:clamp(1.1rem,2.4vw,1.4rem);color:var(--muted);min-height:2rem;margin-bottom:2rem}
 .role b{color:var(--warm);font-weight:500}
@@ -118,6 +123,10 @@ footer{text-align:center;padding:2rem;color:var(--muted);font-size:.9rem}
   nav ul{display:none}
   .about,.panel.on{grid-template-columns:1fr}
   section{padding:4.5rem 0}
+  .hero-grid{flex-direction:column;text-align:center}
+  .photo{order:-1}
+  .btns{justify-content: center;}
+  .btns{justify-content:center}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
